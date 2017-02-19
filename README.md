@@ -3,7 +3,7 @@
 Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**AndroidStudio**](https://developer.android.com/studio/index.html) for Multi-Device Testers to indicate Android Version and Device Name. This **README** will show step-by-step implementation following [**Official Kotlin Tutorials**](https://kotlinlang.org/docs/tutorials/kotlin-android.html) with proper references for anyone interested in Kotlin
 
 
-### 1. [Install Kotlin Plugin](https://kotlinlang.org/docs/tutorials/kotlin-android.html#installing-the-kotlin-plugin) and [Create Java Android Project](https://kotlinlang.org/docs/tutorials/kotlin-android.html#creating-a-project)
+### 1. [Install Kotlin Plugin](https://kotlinlang.org/docs/tutorials/kotlin-android.html#installing-the-kotlin-plugin) and [Create Java Android Project](https://kotlinlang.org/docs/tutorials/kotlin-android.html#creating-a-project) [`0626ddd`](https://github.com/pjhjohn/kotlin-device-intel/commit/0626ddd95c8a4283e01e8f3cdef87cf91f554f63)
 
 1. In AndroidStudio, Go to **File > Settings > Plugins > Install JetBrains plugin…** and Search **Kotlin**
 
@@ -14,7 +14,7 @@ Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**And
   - No **AppCompat** to keep this project as simple as possible
 
 
-### 2. [Convert Java Code to Kotlin, Configuring Project](https://kotlinlang.org/docs/tutorials/kotlin-android.html#configuring-kotlin-in-the-project)
+### 2. [Convert Java Code to Kotlin, Configuring Project](https://kotlinlang.org/docs/tutorials/kotlin-android.html#configuring-kotlin-in-the-project) [`0cb47d3`](https://github.com/pjhjohn/kotlin-device-intel/commit/0cb47d3dd22782978093ab8b6cdafcca824a8865)
 
 Open **MainActivity.java**, and follow steps below:
 
@@ -27,7 +27,7 @@ Open **MainActivity.java**, and follow steps below:
 You can change Kotlin Version by editing `ext.kotlin_version` in `$PROJECT_ROOT/build.gradle`
 
 
-### 3. Simple Dashboard in Activity using [Kotlin Android Extensions](https://kotlinlang.org/docs/tutorials/android-plugin.html)
+### 3. Simple Dashboard in Activity using [Kotlin Android Extensions](https://kotlinlang.org/docs/tutorials/android-plugin.html) [`04695ae`](https://github.com/pjhjohn/kotlin-device-intel/commit/04695aedcc5d28c3bc1f30be14fc92324b0b63ef)
 
 Since building an Android Widget directly in Kotlin is a bit overdo as a start, in-Activity implementation will be a good bridge for adaptation to Kotlin. View inflation and binding will be supported through Kotlin Android Extensions.
 
@@ -75,7 +75,7 @@ Since building an Android Widget directly in Kotlin is a bit overdo as a start, 
 AndroidStudio Replaces `.` in Android Resource IDs with `_` for readability and convenience. However, Kotlin Android Extensions cannot recognize this. **You must concatenate words in `android:id` using `_` to avoid this issue**.
 
 
-### 4. Implement DeviceIntel Widget
+### 4. Implement DeviceIntel Widget [`95531bb`](https://github.com/pjhjohn/kotlin-device-intel/commit/95531bbaae84a17a6592f2e28de5a64cd9df5a32)
 
 Since the purpose of this application is quite text-based, we recycle activity_main.xml for the widget as well. In this step, we setup widget configurations in `AndroidManifest.xml`.
 
@@ -90,7 +90,7 @@ throw UnsupportedOperationException("not implemented") //To change body of creat
 However, this is quite not straightforward. For the time being, auto-generated method stub is better when creating with **java** and **Convert Java File to Kotlin File**.
 
 
-### 5. Improve DeviceIntel Widget
+### 5. Improve DeviceIntel Widget [`0ad09e9`](https://github.com/pjhjohn/kotlin-device-intel/commit/0ad09e98dc536b29907736df4055013f564ca622)
 
 - Separate layout `deviceintel_widget.xml` from `activity_main.xml`
 - Widget Preview Image for Widget Selection View
