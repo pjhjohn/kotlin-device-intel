@@ -1,4 +1,4 @@
-package io.pjhjohn.kotlin.androidwidget;
+package io.pjhjohn.kotlin.deviceintel;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("io.pjhjohn.kotlin.androidwidget", appContext.getPackageName());
+        assertEquals("io.pjhjohn.kotlin.deviceintel", appContext.getPackageName());
     }
 }

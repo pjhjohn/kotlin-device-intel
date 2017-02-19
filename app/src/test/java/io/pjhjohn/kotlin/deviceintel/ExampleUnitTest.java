@@ -1,4 +1,4 @@
-package io.pjhjohn.kotlin.androidwidget;
+package io.pjhjohn.kotlin.deviceintel;
 
 import org.junit.Test;
 

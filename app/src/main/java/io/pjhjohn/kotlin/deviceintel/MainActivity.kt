@@ -1,10 +1,11 @@
-package io.pjhjohn.kotlin.androidwidget
+package io.pjhjohn.kotlin.deviceintel
 
 import android.app.Activity
 import android.os.Build
 import android.os.Bundle
 
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : Activity() {
 

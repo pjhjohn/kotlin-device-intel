@@ -11,7 +11,7 @@
     android:paddingRight="@dimen/unit_2x"
     android:paddingTop="@dimen/unit_2x"
     android:background="#80ffffff"
-    tools:context="io.pjhjohn.kotlin.androidwidget.MainActivity">
+    tools:context="io.pjhjohn.kotlin.deviceintel.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
