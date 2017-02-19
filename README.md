@@ -26,6 +26,7 @@ Open **MainActivity.java**, and follow steps below:
 
 You can change Kotlin Version by editing `ext.kotlin_version` in `$PROJECT_ROOT/build.gradle`
 
+
 ### 3. Simple Dashboard in Activity using [Kotlin Android Extensions](https://kotlinlang.org/docs/tutorials/android-plugin.html)
 
 Since building an Android Widget directly in Kotlin is a bit overdo as a start, in-Activity implementation will be a good bridge for adaptation to Kotlin. View inflation and binding will be supported through Kotlin Android Extensions.
@@ -73,6 +74,7 @@ Since building an Android Widget directly in Kotlin is a bit overdo as a start, 
 
 AndroidStudio Replaces `.` in Android Resource IDs with `_` for readability and convenience. However, Kotlin Android Extensions cannot recognize this. **You must concatenate words in `android:id` using `_` to avoid this issue**.
 
+
 ### 4. Implement DeviceIntel Widget
 
 Since the purpose of this application is quite text-based, we recycle activity_main.xml for the widget as well. In this step, we setup widget configurations in `AndroidManifest.xml`.
@@ -86,6 +88,14 @@ throw UnsupportedOperationException("not implemented") //To change body of creat
 ```
 
 However, this is quite not straightforward. For the time being, auto-generated method stub is better when creating with **java** and **Convert Java File to Kotlin File**.
+
+
+### 5. Improve DeviceIntel Widget
+
+- Separate layout `deviceintel_widget.xml` from `activity_main.xml`
+- Widget Preview Image for Widget Selection View
+- Unified TextView Style with style defined in `styles.xml`
+- Use `.capitalize()` instead of `.toUpperCase` for device brand string
 
 
 ### References

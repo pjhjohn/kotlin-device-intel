@@ -15,7 +15,7 @@ class MainActivity : Activity() {
 
         device_release_version.text = "Android ${Build.VERSION.RELEASE}"
         device_sdk_version.text = "API ${Build.VERSION.SDK_INT}"
-        device_brand.text = Build.BRAND.toUpperCase()
+        device_brand.text = Build.BRAND.capitalize()
         device_model.text = Build.MODEL
     }
 }
