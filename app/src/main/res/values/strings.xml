@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">AndroidWidget</string>
+    <string name="app_name">Device Intel</string>
+
+    <string name="default.not_found">Not Found</string>
+
+    <string name="device.version.release.label">Android OS Version</string>
+    <string name="device.version.release.placeholder">@string/default.not_found</string>
+    <string name="device.version.sdk.label">Android SDK Version</string>
+    <string name="device.version.sdk.placeholder">@string/default.not_found</string>
+    <string name="device.brand.label">Device Brand</string>
+    <string name="device.brand.placeholder">@string/default.not_found</string>
+    <string name="device.model.label">Device Model</string>
+    <string name="device.model.placeholder">@string/default.not_found</string>
 </resources>

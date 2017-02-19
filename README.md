@@ -1,7 +1,6 @@
 # kotlin-android-widget
 
-Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**AndroidStudio**](https://developer.android.com/studio/index.html) for Multi-Device Testers to indicate Android Version and Device Name.  
-This **README** will show step-by-step implementation following [**Official Kotlin Tutorials**](https://kotlinlang.org/docs/tutorials/kotlin-android.html) with proper references for anyone interested in Kotlin
+Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**AndroidStudio**](https://developer.android.com/studio/index.html) for Multi-Device Testers to indicate Android Version and Device Name. This **README** will show step-by-step implementation following [**Official Kotlin Tutorials**](https://kotlinlang.org/docs/tutorials/kotlin-android.html) with proper references for anyone interested in Kotlin
 
 
 ### 1. [Install Kotlin Plugin](https://kotlinlang.org/docs/tutorials/kotlin-android.html#installing-the-kotlin-plugin) and [Create Java Android Project](https://kotlinlang.org/docs/tutorials/kotlin-android.html#creating-a-project)
@@ -26,6 +25,59 @@ Open **MainActivity.java**, and follow steps below:
 3. By adding **.kt** file, AndroidStudio will trigger **Configure Kotlin in Project** Action as well and will automatically generate code for Kotlin configuration in AndroidStudio
 
 You can change Kotlin Version by editing `ext.kotlin_version` in `$PROJECT_ROOT/build.gradle`
+
+### 3. Simple Dashboard in Activity using [Kotlin Android Extensions](https://kotlinlang.org/docs/tutorials/android-plugin.html)
+
+Since building an Android Widget directly in Kotlin is a bit overdo as a start, in-Activity implementation will be a good bridge for adaptation to Kotlin. View inflation and binding will be supported through Kotlin Android Extensions.
+
+1. Configure Kotlin Android Extensions for View Binding
+
+  In `build.gradle`, add plugin **kotlin-android-extensions** in addition to **kotlin-android** plugin
+
+  ```groovy
+  apply plugin: 'kotlin-android'
+  apply plugin: 'kotlin-android-extensions'
+  ```
+
+  In **MainActivity.kt**, `import` layout widget properties
+
+  ```kotlin
+  import kotlinx.android.synthetic.main.<layout>.*
+  ```
+
+  Since `<layout>` references xml file under **src/main/res/layout**, views under `activity_main.xml` can be imported with following import statement:
+
+  ```kotlin
+  import kotlinx.android.synthetic.main.activity_main.*
+  ```
+
+2. You can easily set strings through value assign instead of old `.setText` function call
+
+  ```xml
+  <!-- For This TextView... -->
+  <TextView android:id="@+id/device_sdk_version" ... />
+  ```
+
+  ```java
+  /* Java */
+  Textview textview = (TextView) this.findViewById(R.id.device_sdk_version);
+  textview.setText("API " + Build.VERSION.SDK_INT);
+  ```
+
+  ```kotlin
+  /* Kotlin */
+  device_sdk_version.text = "API ${Build.VERSION.SDK_INT}"
+  ```
+
+**NOTE**
+
+AndroidStudio Replaces `.` in Android Resource IDs with `_` for readability and convenience. However, Kotlin Android Extensions cannot recognize this. **You must concatenate words in `android:id` using `_` to avoid this issue**
+
+
+### References
+
+- [Getting Started with Android and Kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) : Official Kotlin Tutorial using AndroidStudio
+- [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) : Official Kotlin Excercises with failing UnitTest at first. Code to pass! You can play with [Koans Online](http://try.kotlinlang.org/#/Kotlin%20Koans/Introduction/Hello,%20world!/Task.kt) as well.
 
 
 ### Application Specification
