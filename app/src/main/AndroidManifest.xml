@@ -15,6 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!-- Widget BroadcastReceiver -->
+        <receiver android:name=".DeviceIntelWidget">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/deviceintel_widget_info" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

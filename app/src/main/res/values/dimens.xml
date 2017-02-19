@@ -1,5 +1,6 @@
 <resources>
     <!-- Unit Dimension Measurements -->
+    <dimen name="unit_0.5x">4dp</dimen>
     <dimen name="unit_1x">8dp</dimen>
     <dimen name="unit_2x">16dp</dimen>
     <dimen name="unit_3x">24dp</dimen>

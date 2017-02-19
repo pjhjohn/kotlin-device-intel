@@ -71,7 +71,21 @@ Since building an Android Widget directly in Kotlin is a bit overdo as a start, 
 
 **NOTE**
 
-AndroidStudio Replaces `.` in Android Resource IDs with `_` for readability and convenience. However, Kotlin Android Extensions cannot recognize this. **You must concatenate words in `android:id` using `_` to avoid this issue**
+AndroidStudio Replaces `.` in Android Resource IDs with `_` for readability and convenience. However, Kotlin Android Extensions cannot recognize this. **You must concatenate words in `android:id` using `_` to avoid this issue**.
+
+### 4. Implement DeviceIntel Widget
+
+Since the purpose of this application is quite text-based, we recycle activity_main.xml for the widget as well. In this step, we setup widget configurations in `AndroidManifest.xml`.
+
+**NOTE**
+
+Kotlin always generates method stub with following body:
+
+```kotlin
+throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
+```
+
+However, this is quite not straightforward. For the time being, auto-generated method stub is better when creating with **java** and **Convert Java File to Kotlin File**.
 
 
 ### References

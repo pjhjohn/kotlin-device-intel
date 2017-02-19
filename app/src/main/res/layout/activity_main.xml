@@ -10,60 +10,59 @@
     android:paddingLeft="@dimen/unit_2x"
     android:paddingRight="@dimen/unit_2x"
     android:paddingTop="@dimen/unit_2x"
+    android:background="#80ffffff"
     tools:context="io.pjhjohn.kotlin.androidwidget.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_1x"
+        android:layout_marginBottom="@dimen/unit_0.5x"
         android:text="@string/device.version.release.label"/>
-
     <TextView
         android:id="@+id/device_release_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_2x"
+        android:layout_marginBottom="@dimen/unit_1x"
         android:text="@string/device.version.release.placeholder"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_1x"
+        android:layout_marginBottom="@dimen/unit_0.5x"
         android:text="@string/device.version.sdk.label"/>
-
     <TextView
         android:id="@+id/device_sdk_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_2x"
+        android:layout_marginBottom="@dimen/unit_1x"
         android:text="@string/device.version.sdk.placeholder"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_1x"
+        android:layout_marginBottom="@dimen/unit_0.5x"
         android:text="@string/device.brand.label"/>
     <TextView
         android:id="@+id/device_brand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_2x"
+        android:layout_marginBottom="@dimen/unit_1x"
         android:text="@string/device.brand.placeholder"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_1x"
+        android:layout_marginBottom="@dimen/unit_0.5x"
         android:text="@string/device.model.label"/>
     <TextView
         android:id="@+id/device_model"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_2x"
+        android:layout_marginBottom="@dimen/unit_1x"
         android:text="@string/device.model.placeholder"/>
 
 </LinearLayout>
