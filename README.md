@@ -1,5 +1,7 @@
 # kotlin-device-intel
 
+[![playstore](https://img.shields.io/badge/playstore-device--intel-brightgreen.svg?style=flat-square)](https://play.google.com/store/apps/details?id=io.pjhjohn.kotlin.deviceintel) [![minSdkVersion](https://img.shields.io/badge/minSdkVersion-21-blue.svg?style=flat-square)](#)
+
 Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**AndroidStudio**](https://developer.android.com/studio/index.html) for Multi-Device Testers to indicate Android Version and Device Name. This **README** will show step-by-step implementation following [**Official Kotlin Tutorials**](https://kotlinlang.org/docs/tutorials/kotlin-android.html) with proper references for anyone interested in Kotlin
 
 
@@ -102,11 +104,6 @@ However, this is quite not straightforward. For the time being, auto-generated m
 
 - [Getting Started with Android and Kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) : Official Kotlin Tutorial using AndroidStudio
 - [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) : Official Kotlin Excercises with failing UnitTest at first. Code to pass! You can play with [Koans Online](http://try.kotlinlang.org/#/Kotlin%20Koans/Introduction/Hello,%20world!/Task.kt) as well.
-
-
-### Application Specification
-
-- `minSdkVersion 21` for [Material Design](https://material.io/guidelines/) as default design set
 
 
 ### Miscellaneous
