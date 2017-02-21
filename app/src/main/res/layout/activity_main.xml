@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/unit_2x"
     android:paddingRight="@dimen/unit_2x"
     android:paddingTop="@dimen/unit_2x"
-    android:background="#80ffffff"
+    android:background="@color/white_95p"
     tools:context="io.pjhjohn.kotlin.deviceintel.MainActivity">
 
     <TextView
