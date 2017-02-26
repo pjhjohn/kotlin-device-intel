@@ -1,68 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/unit_2x"
-    android:paddingLeft="@dimen/unit_2x"
-    android:paddingRight="@dimen/unit_2x"
-    android:paddingTop="@dimen/unit_2x"
     android:background="@color/white_95p"
+    android:clipToPadding="false"
     tools:context="io.pjhjohn.kotlin.deviceintel.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_0.5x"
-        android:text="@string/device.version.release.label"/>
-    <TextView
-        android:id="@+id/device_release_version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_1x"
-        android:text="@string/device.version.release.placeholder"/>
+        android:layout_alignParentTop="true"
+        android:paddingStart="@dimen/unit_2x"
+        android:paddingEnd="@dimen/unit_2x"
+        android:paddingBottom="@dimen/unit_2x"
+        android:background="@color/white_95p"
+        android:elevation="@dimen/unit_0x">
+
+        <TextView
+            style="@style/Title"
+            android:id="@+id/android_version_title"
+            android:layout_alignParentTop="true"
+            android:text="@string/android_version_title"/>
+
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/android_version_release_label"
+            android:layout_below="@id/android_version_title"
+            android:text="@string/android_version_release_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/android_version_release_value"
+            android:layout_alignBaseline="@id/android_version_release_label"
+            android:layout_toEndOf="@id/android_version_release_label"
+            android:text="@string/android_version_release_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/android_version_sdk_label"
+            android:layout_below="@id/android_version_release_label"
+            android:text="@string/android_version_sdk_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/android_version_sdk_value"
+            android:layout_alignBaseline="@id/android_version_sdk_label"
+            android:layout_toEndOf="@id/android_version_sdk_label"
+            android:text="@string/android_version_sdk_value_default"/>
+
+
+
+        <TextView
+            style="@style/Title"
+            android:id="@+id/device_info_title"
+            android:layout_below="@id/android_version_sdk_label"
+            android:text="@string/device_info_title"/>
+
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_brand_label"
+            android:layout_below="@id/device_info_title"
+            android:text="@string/device_info_brand_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_brand_value"
+            android:layout_alignBaseline="@id/device_info_brand_label"
+            android:layout_toEndOf="@id/device_info_brand_label"
+            android:text="@string/device_info_brand_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_manufacturer_label"
+            android:layout_below="@id/device_info_brand_label"
+            android:text="@string/device_info_manufacturer_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_manufacturer_value"
+            android:layout_alignBaseline="@id/device_info_manufacturer_label"
+            android:layout_toEndOf="@id/device_info_manufacturer_label"
+            android:text="@string/device_info_manufacturer_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_marketname_label"
+            android:layout_below="@id/device_info_manufacturer_label"
+            android:text="@string/device_info_marketname_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_marketname_value"
+            android:layout_alignBaseline="@id/device_info_marketname_label"
+            android:layout_toEndOf="@id/device_info_marketname_label"
+            android:text="@string/device_info_marketname_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_model_label"
+            android:layout_below="@id/device_info_marketname_label"
+            android:text="@string/device_info_model_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_model_value"
+            android:layout_alignBaseline="@id/device_info_model_label"
+            android:layout_toEndOf="@id/device_info_model_label"
+            android:text="@string/device_info_model_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_codename_label"
+            android:layout_below="@id/device_info_model_label"
+            android:text="@string/device_info_codename_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_codename_value"
+            android:layout_alignBaseline="@id/device_info_codename_label"
+            android:layout_toEndOf="@id/device_info_codename_label"
+            android:text="@string/device_info_codename_value_default"/>
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/open_source_libraries"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_3x"
+        android:layout_above="@+id/android_device_names"
+        android:paddingStart="@dimen/unit_2x"
+        android:paddingEnd="@dimen/unit_2x"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_0.5x"
-        android:text="@string/device.version.sdk.label"/>
-    <TextView
-        android:id="@+id/device_sdk_version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_1x"
-        android:text="@string/device.version.sdk.placeholder"/>
+        android:textSize="16sp"
+        android:text="@string/open_source_libraries"
+        android:elevation="@dimen/unit_2x"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/android_device_names"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_0.5x"
-        android:text="@string/device.brand.label"/>
-    <TextView
-        android:id="@+id/device_brand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_1x"
-        android:text="@string/device.brand.placeholder"/>
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/open_source_library_background"
+        android:clickable="true"
+        android:elevation="@dimen/unit_2x">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/unit_0.5x"
-        android:text="@string/device.model.label"/>
-    <TextView
-        android:id="@+id/device_model"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/unit_1x"
-        android:text="@string/device.model.placeholder"/>
+        <ImageView
+            android:id="@+id/android_device_names_icon"
+            android:layout_width="@dimen/unit_7x"
+            android:layout_height="@dimen/unit_7x"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/unit_2x"
+            android:src="@drawable/ic_github_24dp"
+            android:contentDescription="@string/android_device_names_text"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/android_device_names_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/android_device_names_icon"
+            android:layout_alignBottom="@id/android_device_names_icon"
+            android:layout_toEndOf="@id/android_device_names_icon"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="@string/android_device_names_text"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

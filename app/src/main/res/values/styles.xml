@@ -8,10 +8,37 @@
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="WidgetTextView" parent="android:Widget.Material.Light.TextView">
-        <item name="android:layout_width">match_parent</item>
+    <!-- Activity -->
+    <style name="Title" parent="android:Widget.Material.Light.TextView">
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <!--<item name="android:layout_marginBottom">@dimen/unit_1x</item>-->
+        <item name="android:layout_marginTop">@dimen/unit_2x</item>
+        <item name="android:layout_marginBottom">@dimen/unit_0.5x</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Label" parent="android:Widget.Material.Light.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/unit_0.5x</item>
+        <item name="android:layout_marginEnd">@dimen/unit_1x</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_54p</item>
+    </style>
+    <style name="Value" parent="android:Widget.Material.Light.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/unit_0.5x</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_54p</item>
+    </style>
+
+    <!-- Widget -->
+    <style name="WidgetTextView" parent="android:Widget.Material.Light.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black_54p</item>

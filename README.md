@@ -63,7 +63,7 @@ Since building an Android Widget directly in Kotlin is a bit overdo as a start, 
 
   ```java
   /* Java */
-  Textview textview = (TextView) this.findViewById(R.id.device_sdk_version);
+  TextView textview = (TextView) this.findViewById(R.id.device_sdk_version);
   textview.setText("API " + Build.VERSION.SDK_INT);
   ```
 
@@ -103,7 +103,7 @@ However, this is quite not straightforward. For the time being, auto-generated m
 ### References
 
 - [Getting Started with Android and Kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) : Official Kotlin Tutorial using AndroidStudio
-- [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) : Official Kotlin Excercises with failing UnitTest at first. Code to pass! You can play with [Koans Online](http://try.kotlinlang.org/#/Kotlin%20Koans/Introduction/Hello,%20world!/Task.kt) as well.
+- [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) : Official Kotlin Exercises with failing UnitTest at first. Code to pass! You can play with [Koans Online](http://try.kotlinlang.org/#/Kotlin%20Koans/Introduction/Hello,%20world!/Task.kt) as well.
 
 
 ### Miscellaneous

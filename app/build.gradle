@@ -25,12 +25,18 @@ android {
 }
 
 dependencies {
+    /* Android Essential (Default) */
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
+
+    /* Kotlin */
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    /* Android Devices Name */
+    compile 'com.jaredrummler:android-device-names:1.1.2'
 }
 repositories {
     mavenCentral()

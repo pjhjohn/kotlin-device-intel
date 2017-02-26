@@ -1,14 +1,28 @@
 <resources>
     <string name="app_name">Device Intel</string>
 
-    <string name="default.not_found">Not Found</string>
+    <string name="default_not_found">Not Found</string>
 
-    <string name="device.version.release.label">Android OS Version</string>
-    <string name="device.version.release.placeholder">@string/default.not_found</string>
-    <string name="device.version.sdk.label">Android SDK Version</string>
-    <string name="device.version.sdk.placeholder">@string/default.not_found</string>
-    <string name="device.brand.label">Device Brand</string>
-    <string name="device.brand.placeholder">@string/default.not_found</string>
-    <string name="device.model.label">Device Model</string>
-    <string name="device.model.placeholder">@string/default.not_found</string>
+    <string name="android_version_title">Android Version</string>
+    <string name="android_version_release_label">Android</string>
+    <string name="android_version_release_value_default">@string/default_not_found</string>
+    <string name="android_version_sdk_label">API</string>
+    <string name="android_version_sdk_value_default">@string/default_not_found</string>
+
+    <string name="device_info_title">Device Information</string>
+    <string name="device_info_brand_label">Brand</string>
+    <string name="device_info_brand_value_default">@string/default_not_found</string>
+    <string name="device_info_manufacturer_label">Manufacturer</string>
+    <string name="device_info_manufacturer_value_default">@string/default_not_found</string>
+    <string name="device_info_marketname_label">Market Name</string>
+    <string name="device_info_marketname_value_default">@string/default_not_found</string>
+    <string name="device_info_model_label">Model</string>
+    <string name="device_info_model_value_default">@string/default_not_found</string>
+    <string name="device_info_codename_label">Code Name</string>
+    <string name="device_info_codename_value_default">@string/default_not_found</string>
+
+    <string name="open_source_libraries">Open Source Libraries in Use</string>
+    <string name="android_device_names_text">jaredrummler/AndroidDeviceNames</string>
+    <string name="android_device_names_url">https://github.com/jaredrummler/AndroidDeviceNames</string>
+
 </resources>
