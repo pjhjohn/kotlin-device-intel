@@ -21,7 +21,7 @@ class MainActivity : Activity() {
             android_version_release_value.text = Build.VERSION.RELEASE
             android_version_sdk_value.text = Build.VERSION.SDK_INT.toString()
             device_info_brand_value.text = Build.BRAND.capitalize()
-            if (BuildConfig.VERSION_CODE >= Build.VERSION_CODES.LOLLIPOP) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 device_info_supported_abis_value.text = Build.SUPPORTED_ABIS.joinToString("\n")
                 device_info_supported_64bit_abis_value.text = Build.SUPPORTED_64_BIT_ABIS.joinToString("\n")
                 device_info_supported_32bit_abis_value.text = Build.SUPPORTED_32_BIT_ABIS.joinToString("\n")

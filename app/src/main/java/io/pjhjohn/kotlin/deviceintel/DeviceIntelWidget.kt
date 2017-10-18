@@ -20,7 +20,7 @@ class DeviceIntelWidget : AppWidgetProvider() {
                 widget.setTextViewText(R.id.android_version_release_value, Build.VERSION.RELEASE)
                 widget.setTextViewText(R.id.android_version_sdk_value, Build.VERSION.SDK_INT.toString())
                 widget.setTextViewText(R.id.device_info_brand_value, Build.BRAND.capitalize())
-                if (BuildConfig.VERSION_CODE >= Build.VERSION_CODES.LOLLIPOP) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     widget.setTextViewText(R.id.device_info_supported_abis_value, Build.SUPPORTED_ABIS.joinToString("\n"))
                 } else {
                     widget.setTextViewText(R.id.device_info_supported_abis_value, "#1 : ${Build.CPU_ABI}\n#2 : ${Build.CPU_ABI2}")
