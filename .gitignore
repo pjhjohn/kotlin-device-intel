@@ -1,5 +1,6 @@
 ### Additional Gitignore Configurations ###
 # User-specific configurations(ref: https://gist.github.com/iainconnor/8605514)
+.idea/vcs.xml
 .idea/dictionaries
 .idea/misc.xml
 .idea/modules.xml
