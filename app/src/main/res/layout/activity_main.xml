@@ -36,6 +36,7 @@
             style="@style/Value"
             android:id="@+id/android_version_release_value"
             android:layout_alignBaseline="@id/android_version_release_label"
+            android:layout_toRightOf="@id/android_version_release_label"
             android:layout_toEndOf="@id/android_version_release_label"
             android:text="@string/android_version_release_value_default"/>
 
@@ -48,6 +49,7 @@
             style="@style/Value"
             android:id="@+id/android_version_sdk_value"
             android:layout_alignBaseline="@id/android_version_sdk_label"
+            android:layout_toRightOf="@id/android_version_sdk_label"
             android:layout_toEndOf="@id/android_version_sdk_label"
             android:text="@string/android_version_sdk_value_default"/>
 
@@ -69,6 +71,7 @@
             style="@style/Value"
             android:id="@+id/device_info_brand_value"
             android:layout_alignBaseline="@id/device_info_brand_label"
+            android:layout_toRightOf="@id/device_info_brand_label"
             android:layout_toEndOf="@id/device_info_brand_label"
             android:text="@string/device_info_brand_value_default"/>
 
@@ -81,6 +84,7 @@
             style="@style/Value"
             android:id="@+id/device_info_manufacturer_value"
             android:layout_alignBaseline="@id/device_info_manufacturer_label"
+            android:layout_toRightOf="@id/device_info_manufacturer_label"
             android:layout_toEndOf="@id/device_info_manufacturer_label"
             android:text="@string/device_info_manufacturer_value_default"/>
 
@@ -93,6 +97,7 @@
             style="@style/Value"
             android:id="@+id/device_info_marketname_value"
             android:layout_alignBaseline="@id/device_info_marketname_label"
+            android:layout_toRightOf="@id/device_info_marketname_label"
             android:layout_toEndOf="@id/device_info_marketname_label"
             android:text="@string/device_info_marketname_value_default"/>
 
@@ -105,6 +110,7 @@
             style="@style/Value"
             android:id="@+id/device_info_model_value"
             android:layout_alignBaseline="@id/device_info_model_label"
+            android:layout_toRightOf="@id/device_info_model_label"
             android:layout_toEndOf="@id/device_info_model_label"
             android:text="@string/device_info_model_value_default"/>
 
@@ -117,8 +123,42 @@
             style="@style/Value"
             android:id="@+id/device_info_codename_value"
             android:layout_alignBaseline="@id/device_info_codename_label"
+            android:layout_toRightOf="@id/device_info_codename_label"
             android:layout_toEndOf="@id/device_info_codename_label"
             android:text="@string/device_info_codename_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_supported_abis_label"
+            android:layout_below="@id/device_info_codename_label"
+            android:text="@string/device_info_supported_abis_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_supported_abis_value"
+            android:layout_below="@id/device_info_supported_abis_label"
+            android:text="@string/device_info_supported_abis_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_supported_64bit_abis_label"
+            android:layout_below="@id/device_info_supported_abis_value"
+            android:text="@string/device_info_supported_64bit_abis_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_supported_64bit_abis_value"
+            android:layout_below="@id/device_info_supported_64bit_abis_label"
+            android:text="@string/device_info_supported_64bit_abis_value_default"/>
+
+        <TextView
+            style="@style/Label"
+            android:id="@+id/device_info_supported_32bit_abis_label"
+            android:layout_below="@id/device_info_supported_64bit_abis_value"
+            android:text="@string/device_info_supported_32bit_abis_label"/>
+        <TextView
+            style="@style/Value"
+            android:id="@+id/device_info_supported_32bit_abis_value"
+            android:layout_below="@id/device_info_supported_32bit_abis_label"
+            android:text="@string/device_info_supported_32bit_abis_value_default"/>
 
     </RelativeLayout>
 
@@ -143,6 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/open_source_library_background"
+        android:focusable="true"
         android:clickable="true"
         android:elevation="@dimen/unit_2x">
 
@@ -151,6 +192,7 @@
             android:layout_width="@dimen/unit_7x"
             android:layout_height="@dimen/unit_7x"
             android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:padding="@dimen/unit_2x"
             android:src="@drawable/ic_github_24dp"
@@ -162,6 +204,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/android_device_names_icon"
             android:layout_alignBottom="@id/android_device_names_icon"
+            android:layout_toRightOf="@id/android_device_names_icon"
             android:layout_toEndOf="@id/android_device_names_icon"
             android:gravity="center_vertical"
             android:textColor="@color/white"

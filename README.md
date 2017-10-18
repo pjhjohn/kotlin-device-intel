@@ -1,6 +1,6 @@
 # kotlin-device-intel
 
-[![playstore](https://img.shields.io/badge/playstore-device--intel-brightgreen.svg?style=flat-square)](https://play.google.com/store/apps/details?id=io.pjhjohn.kotlin.deviceintel) [![minSdkVersion](https://img.shields.io/badge/minSdkVersion-21-blue.svg?style=flat-square)](#)
+[![playstore](https://img.shields.io/badge/playstore-device--intel-brightgreen.svg?style=flat-square)](https://play.google.com/store/apps/details?id=io.pjhjohn.kotlin.deviceintel) [![minSdkVersion](https://img.shields.io/badge/minSdkVersion-14-blue.svg?style=flat-square)](#)
 
 Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**AndroidStudio**](https://developer.android.com/studio/index.html) for Multi-Device Testers to indicate Android Version and Device Name. This **README** will show step-by-step implementation following [**Official Kotlin Tutorials**](https://kotlinlang.org/docs/tutorials/kotlin-android.html) with proper references for anyone interested in Kotlin
 
@@ -12,7 +12,7 @@ Simple Android Widget written in [**Kotlin**](https://kotlinlang.org/) in [**And
 2. Install Plugin and Restart AndroidStudio
 
 3. Go **File > New > New Project** and create new Java Android Project
-  - Minimum SDK Version **21** for [Material Design](https://material.io/guidelines/)
+  - Minimum SDK Version **21** for [Material Design](https://material.io/guidelines/) => Now it's 14
   - No **AppCompat** to keep this project as simple as possible
 
 

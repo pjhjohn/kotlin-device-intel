@@ -20,6 +20,12 @@
     <string name="device_info_model_value_default">@string/default_not_found</string>
     <string name="device_info_codename_label">Code Name</string>
     <string name="device_info_codename_value_default">@string/default_not_found</string>
+    <string name="device_info_supported_abis_label">Supported ABIs</string>
+    <string name="device_info_supported_abis_value_default">@string/default_not_found</string>
+    <string name="device_info_supported_64bit_abis_label">Supported 64Bit ABIs</string>
+    <string name="device_info_supported_64bit_abis_value_default">@string/default_not_found</string>
+    <string name="device_info_supported_32bit_abis_label">Supported 32Bit ABIs</string>
+    <string name="device_info_supported_32bit_abis_value_default">@string/default_not_found</string>
 
     <string name="open_source_libraries">Open Source Libraries in Use</string>
     <string name="android_device_names_text">jaredrummler/AndroidDeviceNames</string>

@@ -7,6 +7,7 @@
     android:paddingEnd="@dimen/unit_2x"
     android:paddingBottom="@dimen/unit_2x"
     android:background="@drawable/widget_card_background"
+    android:focusable="true"
     android:clickable="true">
 
 
@@ -28,6 +29,7 @@
         style="@style/Value"
         android:id="@+id/android_version_release_value"
         android:layout_alignBaseline="@id/android_version_release_label"
+        android:layout_toRightOf="@id/android_version_release_label"
         android:layout_toEndOf="@id/android_version_release_label"
         android:text="@string/android_version_release_value_default"/>
 
@@ -40,6 +42,7 @@
         style="@style/Value"
         android:id="@+id/android_version_sdk_value"
         android:layout_alignBaseline="@id/android_version_sdk_label"
+        android:layout_toRightOf="@id/android_version_sdk_label"
         android:layout_toEndOf="@id/android_version_sdk_label"
         android:text="@string/android_version_sdk_value_default"/>
 
@@ -62,6 +65,7 @@
         style="@style/Value"
         android:id="@+id/device_info_brand_value"
         android:layout_alignBaseline="@id/device_info_brand_label"
+        android:layout_toRightOf="@id/device_info_brand_label"
         android:layout_toEndOf="@id/device_info_brand_label"
         android:text="@string/device_info_brand_value_default"/>
 
@@ -74,6 +78,7 @@
         style="@style/Value"
         android:id="@+id/device_info_manufacturer_value"
         android:layout_alignBaseline="@id/device_info_manufacturer_label"
+        android:layout_toRightOf="@id/device_info_manufacturer_label"
         android:layout_toEndOf="@id/device_info_manufacturer_label"
         android:text="@string/device_info_manufacturer_value_default"/>
 
@@ -86,6 +91,7 @@
         style="@style/Value"
         android:id="@+id/device_info_marketname_value"
         android:layout_alignBaseline="@id/device_info_marketname_label"
+        android:layout_toRightOf="@id/device_info_marketname_label"
         android:layout_toEndOf="@id/device_info_marketname_label"
         android:text="@string/device_info_marketname_value_default"/>
 
@@ -98,6 +104,7 @@
         style="@style/Value"
         android:id="@+id/device_info_model_value"
         android:layout_alignBaseline="@id/device_info_model_label"
+        android:layout_toRightOf="@id/device_info_model_label"
         android:layout_toEndOf="@id/device_info_model_label"
         android:text="@string/device_info_model_value_default"/>
 
@@ -110,7 +117,19 @@
         style="@style/Value"
         android:id="@+id/device_info_codename_value"
         android:layout_alignBaseline="@id/device_info_codename_label"
+        android:layout_toRightOf="@id/device_info_codename_label"
         android:layout_toEndOf="@id/device_info_codename_label"
         android:text="@string/device_info_codename_value_default"/>
+
+    <TextView
+        style="@style/Label"
+        android:id="@+id/device_info_supported_abis_label"
+        android:layout_below="@id/device_info_codename_label"
+        android:text="@string/device_info_supported_abis_label"/>
+    <TextView
+        style="@style/Value"
+        android:id="@+id/device_info_supported_abis_value"
+        android:layout_below="@id/device_info_supported_abis_label"
+        android:text="@string/device_info_supported_abis_value_default"/>
 
 </RelativeLayout>
